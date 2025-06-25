@@ -5,6 +5,24 @@
 {% block body %}
 <h1>Classement - {{ league }} (Saison {{ season }})</h1>
 
+<div style="display: flex; justify-content: center; margin-bottom: 2rem;">
+    <form id="seasonForm" onsubmit="return false;">
+        <label for="season-select" style="font-weight: bold; margin-right: 0.5rem;">Choisissez l'année :</label>
+        <select name="season" id="season-select" style="padding: 0.5rem; font-size: 1rem;">
+            {% for year in years %}
+                <option value="{{ year }}" {% if year == season %}selected{% endif %}>{{ year }}</option>
+            {% endfor %}
+        </select>
+    </form>
+</div>
+<script>
+    document.getElementById('season-select').addEventListener('change', function() {
+        const year = this.value;
+        const leagueId = '{{ app.request.get('leagueId', leagueId|default('')) }}' || '{{ leagueId|default('') }}';
+        window.location.href = '/standing/' + leagueId + '/' + year;
+    });
+</script>
+
 {% if standings is empty %}
     <p>Aucun classement disponible.</p>
 {% else %}

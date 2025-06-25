@@ -23,10 +23,16 @@ class StandingController extends AbstractController
 
             $leagueName = $data['response'][0]['league']['name'] ?? 'Inconnu';
 
+            // Générer la liste des années de 2020 à aujourd'hui
+            $currentYear = (int)date('Y');
+            $years = range(2020, $currentYear);
+            rsort($years); // années décroissantes
+
             return $this->render('standing/index.html.twig', [
-                'standings' => $standings,
+                'standings' => $standings,  
                 'league' => $leagueName,
                 'season' => $season,
+                'years' => $years,
             ]);
         } catch (\Throwable $e) {
             return new Response('Erreur : ' . $e->getMessage(), 500);

@@ -26,8 +26,22 @@ class FootballApiService
     public function getStandings(string $leagueId, int $season): array
     {
         $cacheKey = "standings_{$leagueId}_{$season}";
+        $filename = null;
 
-        return $this->cache->get($cacheKey, function (ItemInterface $item) use ($leagueId, $season) {
+        // 1. On tente de trouver le fichier local avec le NOUVEAU format
+        $filePattern = $this->publicDirectory . "/api/data-*-*-{$leagueId}-{$season}.json";
+        $files = glob($filePattern);
+        if ($files && count($files) > 0) {
+            $filename = $files[0];
+            $json = file_get_contents($filename);
+            $data = json_decode($json, true);
+            if ($data) {
+                return $data;
+            }
+        }
+
+        // 2. Sinon, on va chercher l'API et on stocke le résultat en local
+        $data = $this->cache->get($cacheKey, function (ItemInterface $item) use ($leagueId, $season) {
             $item->expiresAfter(3600); // 1 heure
 
             $response = $this->client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/standings', [
@@ -43,6 +57,20 @@ class FootballApiService
 
             return $response->toArray();
         });
+
+        // 3. On récupère le nom du pays et de la ligue pour composer le nom du fichier
+        if (isset($data['response'][0]['league']['country']) && isset($data['response'][0]['league']['name'])) {
+            $country = $data['response'][0]['league']['country'];
+            $leagueName = $data['response'][0]['league']['name'];
+            $countrySlug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $country), '-'));
+            $leagueNameSlug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $leagueName), '-'));
+            $filename = $this->publicDirectory . "/api/data-{$countrySlug}-{$leagueNameSlug}-{$leagueId}-{$season}.json";
+        } else {
+            $filename = $this->publicDirectory . "/api/data-{$leagueId}-{$season}.json";
+        }
+        $this->storeStandingsToPublicFolder($data, basename($filename));
+
+        return $data;
     }
 
     // nouvelle méthode pour enregistrer le JSON dans /public/api/

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <h1 style="text-align: center;">Choisissez un championnat</h1>
+
+    <div style="display: flex; justify-content: center;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+            {% for league in leagues %}
+                <a href="{{ path('standings_view', { leagueId: league.id, season: season }) }}" style="text-decoration: none;">
+                    <button style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; font-size: 1rem; border-radius: 8px;">
+                        {{ league.name }}
+                    </button>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
