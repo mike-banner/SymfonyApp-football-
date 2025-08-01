@@ -24,7 +24,13 @@ services:
     
     App\Service\FootballApiService:
         arguments:
-            $apiKey: '%env(RAPIDAPI_KEY)%'
+            $apiKey: '%rapidapi_key%'
             $publicDirectory: '%public_directory%'
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Service\PlayerApiService:
+        arguments:
+            $apiKey: '%rapidapi_key%'
+            $publicDirectory: '%public_directory%'
+

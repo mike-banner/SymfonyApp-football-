@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Equipe de {{ teamName }} - Saison {{ season }}{% endblock %}
+
+{% block body %}
+<h1>Effectif de {{ teamName }} - Saison {{ season }}</h1>
+
+{% set positionOrder = {
+    'Goalkeeper': 1,
+    'Defender': 2,
+    'Midfielder': 3,
+    'Attacker': 4
+} %}
+
+{% set playersSorted = players|sort((a, b) => 
+    (positionOrder[a.statistics[0].games.position]|default(99)) 
+    <=> 
+    (positionOrder[b.statistics[0].games.position]|default(99))
+) %}
+<!--{{ dump(playersSorted) }}-->
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+        <tr>
+            <th>Photo</th>
+            <th>Nom</th>
+            <th>Poste</th>
+            <th>Âge</th>
+            <th>Nationalité</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for player in playersSorted %}
+            <tr>
+                <td>
+                    {% set photo = player.player.photo is not empty ? player.player.photo : asset('images/default.jpg') %}
+                <img src="{{ player.player.photo }}" alt="{{ player.player.name }}" width="50" /></td>
+                <td>{{ player.player.name }}</td>
+                <td>{{ player.statistics[0].games.position|default('N/A') }}</td>
+                <td>{{ player.player.age }}</td>
+                <td>{{ player.player.nationality }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

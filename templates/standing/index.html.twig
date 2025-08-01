@@ -44,8 +44,10 @@
                 <tr>
                     <td>{{ team.rank }}</td>
                     <td>
-                        <img src="{{ team.team.logo }}" alt="{{ team.team.name }}" width="20" style="vertical-align:middle" />
-                        {{ team.team.name }}
+                        <a href="{{ path('team_view', { teamId: team.team.id, season: season }) }}">
+                            <img src="{{ team.team.logo }}" alt="{{ team.team.name }}" width="20" style="vertical-align:middle" />
+                            {{ team.team.name }}
+                        </a>
                     </td>
                     <td>{{ team.points }}</td>
                     <td>{{ team.goalsDiff }}</td>
