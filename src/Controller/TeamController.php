@@ -22,22 +22,22 @@ public function view(
         $playersData = $playerService->getPlayersByTeam($teamId, $season, $league);
         $players = $playersData['response'] ?? [];
 
-        // Récupérer les infos de l'équipe via le service TeamApiService
-        $team = $teamService->getTeamInfo($teamId, $season, $league);
-        dump($team);
+        $teamFull = $teamService->getTeamInfo($teamId, $season, $league);
 
+        // Séparation des données (si la réponse contient bien 'team' et 'venue')
+        $teamBasic = $teamFull['team'] ?? null;
 
-        // Si le service ne renvoie rien, fallback sur le premier joueur (si disponible)
-        if (!$team && !empty($players)) {
-            $team = $players[0]['team'] ?? ['name' => 'Équipe inconnue', 'logo' => null];
+        // Fallbacks comme avant
+        if (!$teamBasic && !empty($players)) {
+            $teamBasic = $players[0]['team'] ?? ['name' => 'Équipe inconnue', 'logo' => null];
         }
 
-        if (!$team) {
-            $team = ['name' => 'Équipe inconnue', 'logo' => null];
+        if (!$teamBasic) {
+            $teamBasic = ['name' => 'Équipe inconnue', 'logo' => null];
         }
 
         return $this->render('team/view.html.twig', [
-            'team' => $team,
+            'team' => $teamBasic,
             'season' => $season,
             'players' => $players,
         ]);

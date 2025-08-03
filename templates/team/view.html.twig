@@ -1,13 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Equipe de {{ team.team.name }} - Saison {{ season }}{% endblock %}
+{% block title %}Equipe de {{ team.name }} - Saison {{ season }}{% endblock %}
 
 {% block body %}
-<h2>{{ team.team.name }} - Saison {{ season }}</h2>
-
-{% if team.team.logo %}
-    <img src="{{ team.team.logo }}" alt="Logo {{ team.team.name }}" height="60">
+<div style="display: flex; gap: 10px; align-items: center;">
+{% if team.logo %}
+    <img src="{{ team.logo }}" alt="Logo {{ team.name }}" height="60">
 {% endif %}
+<h2>{{ team.name }} - Saison {{ season }}</h2>
+</div>
 
 
 {% set positionOrder = {
