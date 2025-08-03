@@ -21,13 +21,17 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
-    
+
+
+    #API 
     App\Service\FootballApiService:
         arguments:
             $apiKey: '%rapidapi_key%'
             $publicDirectory: '%public_directory%'
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    
+    App\Service\TeamApiService:
+        arguments:
+            $apiKey: '%rapidapi_key%'
 
     App\Service\PlayerApiService:
         arguments:

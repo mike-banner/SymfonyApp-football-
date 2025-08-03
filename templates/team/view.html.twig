@@ -1,9 +1,14 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Equipe de {{ teamName }} - Saison {{ season }}{% endblock %}
+{% block title %}Equipe de {{ team.team.name }} - Saison {{ season }}{% endblock %}
 
 {% block body %}
-<h1>Effectif de {{ teamName }} - Saison {{ season }}</h1>
+<h2>{{ team.team.name }} - Saison {{ season }}</h2>
+
+{% if team.team.logo %}
+    <img src="{{ team.team.logo }}" alt="Logo {{ team.team.name }}" height="60">
+{% endif %}
+
 
 {% set positionOrder = {
     'Goalkeeper': 1,
@@ -34,7 +39,7 @@
             <tr>
                 <td>
                     {% set photo = player.player.photo is not empty ? player.player.photo : asset('images/default.jpg') %}
-                <img src="{{ player.player.photo }}" alt="{{ player.player.name }}" width="50" /></td>
+                <img src="{{ photo }}" alt="{{ player.player.name }}" width="50" /></td>
                 <td>{{ player.player.name }}</td>
                 <td>{{ player.statistics[0].games.position|default('N/A') }}</td>
                 <td>{{ player.player.age }}</td>

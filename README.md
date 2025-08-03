@@ -1,3 +1,6 @@
+🔁 [Switch to English version](README-en.md)
+
+
 
 # ⚽ Football Team Viewer
 
@@ -12,7 +15,7 @@ Ce projet permet de consulter des informations détaillées sur les équipes de 
 - classement à venir, calendrier, etc.
 
 dans un premier temps:
-v1: Les données sont récupérées depuis l’API Football de RapidAPI, puis mises en cache localement sous forme de fichiers JSON pour améliorer les performances. (POUR LA PARTI CLASSEMENT DES CHAMPIONNATS ET EFFECTIF)
+V1: Les données sont récupérées depuis l’API Football de RapidAPI, puis mises en cache localement sous forme de fichiers JSON pour améliorer les performances. (POUR LA PARTI CLASSEMENT DES CHAMPIONNATS ET EFFECTIF)
 
 ---
 
