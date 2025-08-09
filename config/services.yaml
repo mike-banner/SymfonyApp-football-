@@ -5,6 +5,8 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     rapidapi_key: '%env(RAPIDAPI_KEY)%'
+    api_football_url: '%env(API_FOOTBALL_URL)%'
+    
     public_directory: '%kernel.project_dir%/public'
 
 services:
@@ -37,4 +39,3 @@ services:
         arguments:
             $apiKey: '%rapidapi_key%'
             $publicDirectory: '%public_directory%'
-

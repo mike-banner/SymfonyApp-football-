@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+{{ dump(team) }}
+
+    Équipe de {{ team.name ?: 'Inconnue' }} - Saison {{ season }}
+{% endblock %}
+
+{% block body %}
+
+<div id="team-info" data-team-id="{{ teamId }}" data-season="{{ season }}" data-league="{{ league }}" style="display:none;"></div>
+
+<div style="display: flex; gap: 10px; align-items: center;">
+    {% if team.logo %}
+        <img src="{{ team.logo }}" alt="Logo {{ team.name ?: 'Inconnue' }}" height="60">
+    {% endif %}
+    <h2>{{ team.name ?: 'Équipe inconnue' }} - Saison {{ season }}</h2>
+</div>
+
+<ul class="tabs-list" style="display: flex; gap: 10px; list-style: none; padding: 0; margin: 1em 0;">
+    <li><button type="button" class="tab-button active" data-tab="infos">Infos</button></li>
+    <li><button type="button" class="tab-button" data-tab="players">Effectif</button></li>
+    <li><button type="button" class="tab-button" data-tab="results">Résultats</button></li>
+    <li><button type="button" class="tab-button" data-tab="fixtures">Calendrier</button></li>
+    <li><button type="button" class="tab-button" data-tab="stats">Statistiques</button></li>
+</ul>
+
+<div class="tabs-container">
+    <div class="tab-panel active" data-tab="infos">
+        <p>Informations générales sur l'équipe...</p>
+    </div>
+
+    <div class="tab-panel" data-tab="players" hidden>
+        <p>Chargement de l’effectif en cours...</p>
+    </div>
+
+    <div class="tab-panel" data-tab="results" data-team-id="{{ teamId }}" data-season="{{ season }}" hidden>
+        {% if results is not empty %}
+            {% include 'team/tabs/results.html.twig' with { matches: results, team: team } %}
+        {% else %}
+            <p>Aucun match joué cette saison.</p>
+        {% endif %}
+    </div>
+
+    <div class="tab-panel" data-tab="fixtures" hidden>
+        {# Ici on affiche les fixtures, il faut donc une variable 'fixtures', pas 'results' #}
+        {% if fixtures is defined and fixtures is not empty %}
+            {% include 'team/tabs/fixtures.html.twig' with { fixtures: fixtures, team: team } %}
+        {% else %}
+            <p>Calendrier des prochains matchs...</p>
+        {% endif %}
+    </div>
+
+    <div class="tab-panel" data-tab="stats" hidden>
+        <p>Statistiques diverses...</p>
+    </div>
+</div>
+
+<style>
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+    .tab-button.active { font-weight: bold; }
+</style>
+
+<script src="{{ asset('js/team-tabs.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+
+{% endblock %}

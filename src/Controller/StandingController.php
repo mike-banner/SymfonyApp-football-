@@ -28,8 +28,9 @@ class StandingController extends AbstractController
             $years = range(2020, $currentYear);
             rsort($years); // années décroissantes
 
-            return $this->render('standing/index.html.twig', [
-                'standings' => $standings,  
+            return $this->render('standing/standing.html.twig', [
+                'standings' => $standings,
+                'leagueId' => $leagueId,  
                 'league' => $leagueName,
                 'season' => $season,
                 'years' => $years,

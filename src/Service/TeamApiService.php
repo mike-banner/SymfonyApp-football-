@@ -1,4 +1,5 @@
 <?php
+// src/Service/PlayerApiService.php
 
 namespace App\Service;
 
@@ -34,6 +35,7 @@ class TeamApiService
             ]);
 
             $data = $response->toArray();
+            dump($data);
             return $data['response'][0] ?? null;
         });
     }

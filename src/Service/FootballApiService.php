@@ -73,6 +73,48 @@ class FootballApiService
         return $data;
     }
 
+    // RECUPERER LES RESULTATS D'UNE EQUIPE
+
+public function getTeamFixtures(int $teamId, int $season): array
+{
+    $cacheKey = "fixtures_{$teamId}_{$season}";
+    $filename = $this->publicDirectory . "/api/fixtures-team-{$teamId}-{$season}.json";
+
+    // 1. Vérifie si le fichier local existe déjà
+    if (file_exists($filename)) {
+        $json = file_get_contents($filename);
+        $data = json_decode($json, true);
+        if ($data) {
+            return $data;
+        }
+    }
+
+    // 2. Sinon, appel à l'API avec cache Symfony
+    $data = $this->cache->get($cacheKey, function (ItemInterface $item) use ($teamId, $season) {
+        $item->expiresAfter(3600); // 1 heure
+
+        $response = $this->client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/fixtures', [
+            'query' => [
+                'team' => $teamId,
+                'season' => $season,
+                'status' => 'FT', // uniquement les matchs joués
+            ],
+            'headers' => [
+                'X-RapidAPI-Host' => 'api-football-v1.p.rapidapi.com',
+                'X-RapidAPI-Key' => $this->apiKey,
+            ],
+        ]);
+
+        return $response->toArray();
+    });
+
+    // 3. Enregistrement local
+    file_put_contents($filename, json_encode($data));
+
+    return $data;
+}
+
+
     // nouvelle méthode pour enregistrer le JSON dans /public/api/
     public function storeStandingsToPublicFolder(array $data, string $filename): void
     {

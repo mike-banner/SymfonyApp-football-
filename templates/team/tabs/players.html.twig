@@ -1,0 +1,27 @@
+{% if players is not empty %}
+    <table class="players-table">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Poste</th>
+                <th>Âge</th>
+                <th>Nationalité</th>
+                <th>Numéro</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for playerData in players.response %}
+                {% set player = playerData.player %}
+                <tr>
+                    <td>{{ player.name }}</td>
+                    <td>{{ player.position ?: 'N/A' }}</td>
+                    <td>{{ player.age ?: 'N/A' }}</td>
+                    <td>{{ player.nationality ?: 'N/A' }}</td>
+                    <td>{{ player.number ?: 'N/A' }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>Aucun joueur trouvé pour cette équipe cette saison.</p>
+{% endif %}

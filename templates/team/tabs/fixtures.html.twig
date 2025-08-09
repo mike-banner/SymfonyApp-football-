@@ -1,0 +1,30 @@
+<table class="fixtures-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Lieu</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if fixtures is not empty %}
+            {% for fixture in fixtures %}
+                <tr>
+                    <td>{{ fixture.fixture.date|date('d/m/Y H:i') }}</td>
+                    <td>
+                        {% if fixture.teams.home.id == team.id %}
+                            <strong class="team-name">{{ team.name }}</strong> - {{ fixture.teams.away.name }}
+                        {% else %}
+                            {{ fixture.teams.home.name }} - <strong class="team-name">{{ team.name }}</strong>
+                        {% endif %}
+                    </td>
+                    <td>{{ fixture.fixture.venue.name ?: 'N/A' }}</td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td colspan="3">Aucun match à venir pour cette saison.</td>
+            </tr>
+        {% endif %}
+    </tbody>
+</table>
