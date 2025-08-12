@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
 {% block title %}
-{{ dump(team) }}
 
     Équipe de {{ team.name ?: 'Inconnue' }} - Saison {{ season }}
 {% endblock %}
@@ -31,7 +30,7 @@
     </div>
 
     <div class="tab-panel" data-tab="players" hidden>
-        <p>Chargement de l’effectif en cours...</p>
+            <p>Chargement de l’effectif...</p>
     </div>
 
     <div class="tab-panel" data-tab="results" data-team-id="{{ teamId }}" data-season="{{ season }}" hidden>

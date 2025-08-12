@@ -1,27 +1,67 @@
-{% if players is not empty %}
-    <table class="players-table">
+{# templates/team/tabs/players.html.twig #}
+
+
+
+<h3>Effectif de l'équipe {{ team.name }} - Saison {{ season }}</h3>
+
+{% if players is empty %}
+    <p>Aucun joueur trouvé pour cette saison.</p>
+{% else %}
+
+    {# 1. Préparer la liste triée par poste avec les gardiens en premier #}
+    {% set playersSorted = players|sort((a, b) => 
+        (a.statistics[0].games.position == 'Goalkeeper' ? 0 : 1) <=> (b.statistics[0].games.position == 'Goalkeeper' ? 0 : 1) 
+        ?: a.statistics[0].games.position <=> b.statistics[0].games.position
+    ) %}
+
+    <table>
         <thead>
             <tr>
-                <th>Nom</th>
-                <th>Poste</th>
+                <th>Joueur</th>
                 <th>Âge</th>
-                <th>Nationalité</th>
+                <th>Poste</th>
                 <th>Numéro</th>
+                <th>Nationalité</th>
             </tr>
         </thead>
         <tbody>
-            {% for playerData in players.response %}
-                {% set player = playerData.player %}
+            {% set currentPosition = null %}
+            {% for item in playersSorted %}
+                {% set player = item.player %}
+                {% set stats = item.statistics[0] ?? {} %}
+                {% set position = stats.games.position|default('N/A') %}
+
+                {# Affiche une ligne démarcation quand le poste change #}
+                {% if position != currentPosition %}
+                    <tr class="poste-separator">
+                        <td colspan="5">{{ position }}</td>
+                    </tr>
+                    {% set currentPosition = position %}
+                {% endif %}
+
                 <tr>
-                    <td>{{ player.name }}</td>
-                    <td>{{ player.position ?: 'N/A' }}</td>
-                    <td>{{ player.age ?: 'N/A' }}</td>
-                    <td>{{ player.nationality ?: 'N/A' }}</td>
-                    <td>{{ player.number ?: 'N/A' }}</td>
+                    <td class="player-name-cell">
+                        <img src="{{ player.photo }}" alt="Photo de {{ player.name }}" class="player-photo" onerror="this.onerror=null;this.src='https://via.placeholder.com/50?text=No+Photo';">
+                        {{ player.name }}
+                    </td>
+                    <td>{{ player.age }}</td>
+                    <td>{{ position }}</td>
+                    <td>{{ stats.games.number|default('N/A') }}</td>
+                    <td>{{ player.nationality }}</td>
                 </tr>
             {% endfor %}
         </tbody>
     </table>
-{% else %}
-    <p>Aucun joueur trouvé pour cette équipe cette saison.</p>
+
+    {% if totalPages > 1 %}
+        <nav class="pagination">
+            {% for i in 1..totalPages %}
+                {% if i == currentPage %}
+                    <strong>{{ i }}</strong>
+                {% else %}
+                    <a href="#" data-page="{{ i }}">{{ i }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
+    {% endif %}
 {% endif %}

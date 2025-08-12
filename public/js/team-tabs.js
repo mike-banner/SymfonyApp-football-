@@ -1,91 +1,78 @@
-function initTeamTabs() {
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabPanels = document.querySelectorAll('.tab-panel');
+document.addEventListener('DOMContentLoaded', () => {
+    // Sélecteurs des boutons onglets
+    const tabButtons = document.querySelectorAll('.tab-button');
+    // Tous les conteneurs des onglets (panels)
+    const tabPanels = document.querySelectorAll('.tab-panel');
 
-  tabButtons.forEach((btn) => {
-    btn.addEventListener('click', async () => {
-      const target = btn.dataset.tab;
+    // Récupérer les infos équipe depuis un conteneur (data attributes)
+    const teamInfo = document.getElementById('team-info');
+    if (!teamInfo) return;
 
-      // Toggle active button
-      tabButtons.forEach((b) => b.classList.remove('active'));
-      btn.classList.add('active');
+    const teamId = teamInfo.dataset.teamId;
+    const season = teamInfo.dataset.season;
+    const league = teamInfo.dataset.league;
 
-      // Toggle panel visibility
-      tabPanels.forEach((panel) => {
-        if (panel.dataset.tab === target) {
-          panel.classList.add('active');
-          panel.removeAttribute('hidden');
-        } else {
-          panel.classList.remove('active');
-          panel.setAttribute('hidden', 'true');
-        }
-      });
+    // Fonction pour charger un onglet par AJAX
+    function loadTab(tab, page = 1) {
+        const container = document.querySelector(`.tab-panel[data-tab="${tab}"]`);
+        if (!container) return;
 
-      // Charger dynamiquement le contenu via AJAX
-      const panel = document.querySelector(`.tab-panel[data-tab="${target}"]`);
-      if (!panel) return;
+        container.innerHTML = '<p>Chargement...</p>';
+        // Cacher tous les panels + retirer active des boutons
+        tabPanels.forEach(p => p.hidden = true);
+        tabButtons.forEach(b => b.classList.remove('active'));
 
-      // Ne charge qu'une seule fois
-      if (panel.dataset.loaded === 'true') return;
+        // Envoi POST avec fetch
+        fetch('/team/load-tab', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                teamId,
+                season,
+                league,
+                tab,
+                page
+            })
+        })
+        .then(resp => {
+            if (!resp.ok) throw new Error('Erreur chargement onglet');
+            return resp.text();
+        })
+        .then(html => {
+            container.innerHTML = html;
+            container.hidden = false;
+            // Ajouter active sur le bouton correspondant
+            document.querySelector(`.tab-button[data-tab="${tab}"]`).classList.add('active');
 
-      // Récupérer infos équipe
-      const info = document.getElementById('team-info');
-      if (!info) {
-        panel.innerHTML = '<p>Informations de l’équipe non trouvées.</p>';
-        return;
-      }
-
-      const teamId = info.dataset.teamId;
-      const season = info.dataset.season;
-      const league = info.dataset.league || '39'; // par défaut Premier League
-
-      if (!teamId || !season) {
-        panel.innerHTML = '<p>Paramètres manquants pour charger les données.</p>';
-        return;
-      }
-
-      // Log debug
-      console.log('Chargement onglet:', target, { teamId, season, league });
-
-      // Préparer les données POST
-      const formData = new FormData();
-      formData.append('teamId', teamId);
-      formData.append('season', season);
-      formData.append('league', league);
-      formData.append('tab', target);
-
-      // Log contenu FormData
-      for (const [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-      }
-
-      // Requête AJAX
-      try {
-        const response = await fetch('/team/load-tab', {
-          method: 'POST',
-          headers: { 'X-Requested-With': 'XMLHttpRequest' },
-          body: formData,
+            // Si le contenu a une pagination, on peut ajouter gestion (optionnel)
+            const paginationLinks = container.querySelectorAll('.pagination a');
+            paginationLinks.forEach(link => {
+                link.addEventListener('click', e => {
+                    e.preventDefault();
+                    const pageParam = link.dataset.page;
+                    if (pageParam) {
+                        loadTab(tab, parseInt(pageParam));
+                    }
+                });
+            });
+        })
+        .catch(() => {
+            container.innerHTML = `<p>Erreur lors du chargement de l’onglet ${tab}.</p>`;
+            container.hidden = false;
         });
+    }
 
-        if (!response.ok) {
-          const errorText = await response.text();
-          throw new Error(`Erreur réseau: ${response.status} - ${errorText}`);
-        }
+    // Initialiser le premier onglet actif (par ex. players)
+    if (tabButtons.length > 0) {
+        const firstTab = tabButtons[0].dataset.tab;
+        loadTab(firstTab);
+    }
 
-        const html = await response.text();
-        panel.innerHTML = html;
-        panel.dataset.loaded = 'true';
-      } catch (error) {
-        panel.innerHTML = `<p>Erreur lors du chargement de l’onglet ${target}.</p>`;
-        console.error(error);
-      }
+    // Écouteurs sur les boutons pour changement d'onglet
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tab = button.dataset.tab;
+            loadTab(tab);
+        });
     });
-  });
-
-  // Activer le premier onglet au chargement
-  if (tabButtons.length > 0) {
-    tabButtons[0].click();
-  }
-}
-
-document.addEventListener('DOMContentLoaded', initTeamTabs);
+});
