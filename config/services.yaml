@@ -5,6 +5,8 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     rapidapi_key: '%env(RAPIDAPI_KEY)%'
+    api_football_url: '%env(API_FOOTBALL_URL)%'
+    
     public_directory: '%kernel.project_dir%/public'
 
 services:
@@ -21,10 +23,19 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
-    
+
+
+    #API 
     App\Service\FootballApiService:
         arguments:
-            $apiKey: '%env(RAPIDAPI_KEY)%'
+            $apiKey: '%rapidapi_key%'
             $publicDirectory: '%public_directory%'
-    # add more service definitions when explicit configuration is needed
-    # please note that last definitions always *replace* previous ones
+    
+    App\Service\TeamApiService:
+        arguments:
+            $apiKey: '%rapidapi_key%'
+
+    App\Service\PlayerApiService:
+        arguments:
+            $apiKey: '%rapidapi_key%'
+            $publicDirectory: '%public_directory%'

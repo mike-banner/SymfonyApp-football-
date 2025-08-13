@@ -1,1 +1,17 @@
-{}
+{
+  "name": "symfonyapp-football-",
+  "version": "1.0.0",
+  "description": "🔁 [Switch to English version](README-en.md)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,32 @@
+<table class="matches-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Match</th>
+            <th>Score</th>
+            <th>Stade</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% if matches is not empty %}
+            {% for match in matches %}
+                <tr>
+                    <td>{{ match.date|date('d/m/Y') }}</td>
+                    <td>
+                        {% if match.isHome %}
+                            <strong class="team-name">{{ team.name }}</strong> - {{ match.opponent }}
+                        {% else %}
+                            {{ match.opponent }} - <strong class="team-name">{{ team.name }}</strong>
+                        {% endif %}
+                    </td>
+                    <td>{{ match.score }}</td>
+                    <td>{{ match.venue ?: 'N/A' }}</td>
+                </tr>
+            {% endfor %}
+        {% else %}
+            <tr>
+                <td colspan="4">Aucun résultat disponible pour cette saison.</td>
+            </tr>
+        {% endif %}
+    </tbody>
+</table>

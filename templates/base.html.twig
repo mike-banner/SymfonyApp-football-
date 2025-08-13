@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-            {# plus aucun lien vers app.css ou autres #}
-        {% endblock %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'><text y='1.2em' font-size='96'>⚫️</text></svg>">
 
-        {% block javascripts %}
-            {# plus aucun script app.js ou importmap #}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+    {% block stylesheets %}
+        {# Si besoin, on peut ajouter ici des liens vers des CSS externes #}
+        {# Ex : <link rel="stylesheet" href="https://cdn.example.com/some-lib.css"> #}
+        <link rel="stylesheet" href="{{ asset('css/fixtures.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/players.css') }}">
+
+    {% endblock %}
+    
+    {% block javascripts %}
+
+        <script src="{{ asset('js/season-select.js') }}"></script>
+        <script src="{{ asset('js/team-tabs.js') }}"></script>
+        <script src="{{ asset('js/main.js') }}"></script>
+    {% endblock %}
+</head>
+<body>
+    {% include 'header.html.twig' %}
+    {% block body %}{% endblock %}
+</body>
 </html>
