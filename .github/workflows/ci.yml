@@ -1,3 +1,4 @@
+# .github/workflows/ci-symfony.yml
 name: CI Symfony
 
 on:
@@ -9,6 +10,21 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: test_db
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -22,6 +38,12 @@ jobs:
 
       - name: Install Composer dependencies
         run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Prepare test environment
+        run: cp .env.test .env.local
+
+      - name: Set API key from GitHub secrets
+        run: echo "RAPIDAPI_KEY=${{ secrets.RAPIDAPI_KEY }}" >> .env.local
 
       - name: Run PHPUnit tests
         run: ./vendor/bin/phpunit --testdox
