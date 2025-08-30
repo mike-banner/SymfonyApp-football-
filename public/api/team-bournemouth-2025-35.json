@@ -1,0 +1,3766 @@
+{
+    "team": "35",
+    "season": 2025,
+    "players": [
+        {
+            "player": {
+                "id": 1150,
+                "name": "T. Adams",
+                "firstname": "Tyler Shaan",
+                "lastname": "Adams",
+                "age": 26,
+                "birth": {
+                    "date": "1999-02-14",
+                    "place": "Wappingers Falls",
+                    "country": "USA"
+                },
+                "nationality": "USA",
+                "height": "173 cm",
+                "weight": "72 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/1150.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 177,
+                        "number": 12,
+                        "position": "Midfielder",
+                        "rating": "6.8",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 2,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": 1
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 80,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 7,
+                        "blocks": 3,
+                        "interceptions": 5
+                    },
+                    "duels": {
+                        "total": 21,
+                        "won": 11
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": 3
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 22,
+                        "number": 12,
+                        "position": "Midfielder",
+                        "rating": "6.6",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 15,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 2734,
+                "name": "P. Billing",
+                "firstname": "Philip",
+                "lastname": "Anyanwu Billing",
+                "age": 29,
+                "birth": {
+                    "date": "1996-06-11",
+                    "place": "Lagos",
+                    "country": "Denmark"
+                },
+                "nationality": "Denmark",
+                "height": "193 cm",
+                "weight": "83 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/2734.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 29,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 6610,
+                "name": "M. Senesi",
+                "firstname": "Marcos Nicolás",
+                "lastname": "Senesi Barón",
+                "age": 28,
+                "birth": {
+                    "date": "1997-05-10",
+                    "place": "Concordia",
+                    "country": "Argentina"
+                },
+                "nationality": "Argentina",
+                "height": "185 cm",
+                "weight": "80 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/6610.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 5,
+                        "position": "Defender",
+                        "rating": "6.55",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 87,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 4,
+                        "blocks": null,
+                        "interceptions": 3
+                    },
+                    "duels": {
+                        "total": 14,
+                        "won": 6
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 51,
+                        "number": 5,
+                        "position": "Defender",
+                        "rating": "7.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 36,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 7,
+                        "won": 3
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 18869,
+                "name": "A. Smith",
+                "firstname": "Adam James",
+                "lastname": "Smith",
+                "age": 34,
+                "birth": {
+                    "date": "1991-04-29",
+                    "place": "London",
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "180 cm",
+                "weight": "78 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/18869.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 15,
+                        "position": "Defender",
+                        "rating": "6.65",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 70,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 15,
+                        "won": 7
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 3,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 15,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 18870,
+                "name": "D. Brooks",
+                "firstname": "David Robert",
+                "lastname": "Brooks",
+                "age": 28,
+                "birth": {
+                    "date": "1997-07-08",
+                    "place": "Warrington",
+                    "country": "England"
+                },
+                "nationality": "Wales",
+                "height": "173 cm",
+                "weight": "62 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/18870.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 150,
+                        "number": 7,
+                        "position": "Midfielder",
+                        "rating": "7.25",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 2,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 1,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 37,
+                        "key": 4,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 2,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 18,
+                        "won": 7
+                    },
+                    "dribbles": {
+                        "attempts": 7,
+                        "success": 4,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 30,
+                        "number": 7,
+                        "position": "Midfielder",
+                        "rating": "6.6",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": 2,
+                        "on": 1
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 10,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 2,
+                        "won": 1
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 19245,
+                "name": "M. Tavernier",
+                "firstname": "Marcus Joseph",
+                "lastname": "Tavernier",
+                "age": 26,
+                "birth": {
+                    "date": "1999-03-22",
+                    "place": "Leeds",
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "70 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/19245.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 168,
+                        "number": 16,
+                        "position": "Midfielder",
+                        "rating": "7.3",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 3,
+                        "on": 3
+                    },
+                    "goals": {
+                        "total": 1,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 65,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": 2
+                    },
+                    "duels": {
+                        "total": 19,
+                        "won": 11
+                    },
+                    "dribbles": {
+                        "attempts": 8,
+                        "success": 5,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 16,
+                        "position": "Midfielder",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 19281,
+                "name": "A. Semenyo",
+                "firstname": "Antoine Serlom",
+                "lastname": "Semenyo",
+                "age": 25,
+                "birth": {
+                    "date": "2000-01-07",
+                    "place": "London",
+                    "country": "England"
+                },
+                "nationality": "Ghana",
+                "height": "185 cm",
+                "weight": "79 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/19281.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 24,
+                        "position": "Attacker",
+                        "rating": "7.3",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 6,
+                        "on": 3
+                    },
+                    "goals": {
+                        "total": 2,
+                        "conceded": 0,
+                        "assists": 1,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 47,
+                        "key": 3,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 35,
+                        "won": 10
+                    },
+                    "dribbles": {
+                        "attempts": 5,
+                        "success": 2,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": 4
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 51,
+                        "number": 24,
+                        "position": "Attacker",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 20,
+                        "key": 2,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 10,
+                        "won": 2
+                    },
+                    "dribbles": {
+                        "attempts": 4,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 20093,
+                "name": "J. Hill",
+                "firstname": "James Clayton",
+                "lastname": "Hill",
+                "age": 23,
+                "birth": {
+                    "date": "2002-01-10",
+                    "place": "Bristol",
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "184 cm",
+                "weight": "73 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/20093.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 0,
+                        "minutes": 10,
+                        "number": 23,
+                        "position": "Defender",
+                        "rating": "6.7",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 2,
+                        "out": 0,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 6,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 96,
+                        "number": 23,
+                        "position": "Defender",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 3,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 71,
+                        "key": 2,
+                        "accuracy": 58
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 14,
+                        "won": 12
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 22136,
+                "name": "B. Diakité",
+                "firstname": "Bafodé",
+                "lastname": "Diakité",
+                "age": 24,
+                "birth": {
+                    "date": "2001-01-06",
+                    "place": "Toulouse",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "185 cm",
+                "weight": "74 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/22136.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 18,
+                        "position": "Defender",
+                        "rating": "6.6",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 91,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 5,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 15,
+                        "won": 9
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 45,
+                        "number": 18,
+                        "position": "Defender",
+                        "rating": "6.7",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 46,
+                        "key": null,
+                        "accuracy": 43
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 2,
+                        "won": 1
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 31057,
+                "name": "H. Traorè",
+                "firstname": "Hamed Junior",
+                "lastname": "Traorè",
+                "age": 25,
+                "birth": {
+                    "date": "2000-02-16",
+                    "place": null,
+                    "country": "Côte d'Ivoire"
+                },
+                "nationality": "Côte d'Ivoire",
+                "height": "184 cm",
+                "weight": "77 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/31057.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 17,
+                        "number": 25,
+                        "position": "Midfielder",
+                        "rating": "6.3",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 1,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 2,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 4,
+                        "won": 1
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 51051,
+                "name": "J. Araujo",
+                "firstname": "Julián Vicente",
+                "lastname": "Araujo Zúñiga",
+                "age": 24,
+                "birth": {
+                    "date": "2001-08-13",
+                    "place": "Lompoc",
+                    "country": "USA"
+                },
+                "nationality": "Mexico",
+                "height": "175 cm",
+                "weight": "70 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/51051.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 2,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 90,
+                        "number": 2,
+                        "position": "Defender",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 52,
+                        "key": null,
+                        "accuracy": 45
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 6,
+                        "won": 3
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 1,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 118307,
+                "name": "Đ. Petrović",
+                "firstname": "Đorđe",
+                "lastname": "Petrović",
+                "age": 26,
+                "birth": {
+                    "date": "1999-10-08",
+                    "place": "Požarevac",
+                    "country": "Serbia"
+                },
+                "nationality": "Serbia",
+                "height": "194 cm",
+                "weight": "89 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/118307.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 1,
+                        "position": "Goalkeeper",
+                        "rating": "7.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 4,
+                        "assists": 0,
+                        "saves": 7
+                    },
+                    "passes": {
+                        "total": 56,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": 1
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": 0
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 96,
+                        "number": 1,
+                        "position": "Goalkeeper",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 2,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 28,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": 0
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 151756,
+                "name": "W. Dennis",
+                "firstname": "William Jonathan",
+                "lastname": "Dennis",
+                "age": 25,
+                "birth": {
+                    "date": "2000-07-10",
+                    "place": null,
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "188 cm",
+                "weight": "84 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/151756.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 40,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 40,
+                        "position": "Goalkeeper",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 152856,
+                "name": "Evanilson",
+                "firstname": "Francisco Evanilson",
+                "lastname": "de Lima Barbosa",
+                "age": 26,
+                "birth": {
+                    "date": "1999-10-06",
+                    "place": "Fortaleza",
+                    "country": "Brazil"
+                },
+                "nationality": "Brazil",
+                "height": "183 cm",
+                "weight": "80 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/152856.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 178,
+                        "number": 9,
+                        "position": "Attacker",
+                        "rating": "6.55",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 3,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 27,
+                        "key": 4,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 21,
+                        "won": 6
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 3,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 30,
+                        "number": 9,
+                        "position": "Attacker",
+                        "rating": "6.5",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": 2,
+                        "on": 2
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 2,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 162267,
+                "name": "A. Truffert",
+                "firstname": "Adrien",
+                "lastname": "Truffert",
+                "age": 24,
+                "birth": {
+                    "date": "2001-11-20",
+                    "place": "Liège",
+                    "country": "Belgium"
+                },
+                "nationality": "France",
+                "height": "176 cm",
+                "weight": "72 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/162267.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 180,
+                        "number": 3,
+                        "position": "Defender",
+                        "rating": "6.6",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 73,
+                        "key": 2,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 2,
+                        "blocks": 1,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 14,
+                        "won": 6
+                    },
+                    "dribbles": {
+                        "attempts": 3,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 1,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 3,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 304853,
+                "name": "A. Scott",
+                "firstname": "Alex Jay",
+                "lastname": "Scott",
+                "age": 22,
+                "birth": {
+                    "date": "2003-08-21",
+                    "place": null,
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "178 cm",
+                "weight": "68 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/304853.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 2,
+                        "minutes": 140,
+                        "number": 8,
+                        "position": "Midfielder",
+                        "rating": "6.45",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 2,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 56,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 24,
+                        "won": 13
+                    },
+                    "dribbles": {
+                        "attempts": 7,
+                        "success": 3,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 5,
+                        "committed": 4
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 96,
+                        "number": 8,
+                        "position": "Midfielder",
+                        "rating": "6.9",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 53,
+                        "key": 3,
+                        "accuracy": 47
+                    },
+                    "tackles": {
+                        "total": 4,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 14,
+                        "won": 9
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 363333,
+                "name": "J. Soler",
+                "firstname": "Julio César",
+                "lastname": "Soler Barreto",
+                "age": 20,
+                "birth": {
+                    "date": "2005-02-16",
+                    "place": "Asunción",
+                    "country": "Argentina"
+                },
+                "nationality": "Argentina",
+                "height": "170 cm",
+                "weight": "63 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/363333.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 20,
+                        "position": "Defender",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 96,
+                        "number": 20,
+                        "position": "Defender",
+                        "rating": "6.5",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 2,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 50,
+                        "key": 2,
+                        "accuracy": 47
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": 2
+                    },
+                    "duels": {
+                        "total": 8,
+                        "won": 3
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 3,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 368030,
+                "name": "E. Kroupi",
+                "firstname": "Eli Junior",
+                "lastname": "Kroupi",
+                "age": 19,
+                "birth": {
+                    "date": "2006-06-23",
+                    "place": "Lorient",
+                    "country": "France"
+                },
+                "nationality": "France",
+                "height": "179 cm",
+                "weight": "70 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/368030.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 2,
+                        "lineups": 0,
+                        "minutes": 10,
+                        "number": 22,
+                        "position": "Attacker",
+                        "rating": "6.3",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 2,
+                        "out": 0,
+                        "bench": 2
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 2,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 66,
+                        "number": 22,
+                        "position": "Attacker",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": 1
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 5,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 4,
+                        "won": 1
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 402432,
+                "name": "Ben Winterburn",
+                "firstname": "Ben",
+                "lastname": "Winterburn",
+                "age": 21,
+                "birth": {
+                    "date": "2004-09-04",
+                    "place": null,
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "185 cm",
+                "weight": "75 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/402432.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 13,
+                        "number": 47,
+                        "position": "Midfielder",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 1,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 1,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 402434,
+                "name": "Remy Rees-Dottin",
+                "firstname": "Remy",
+                "lastname": "Rees-Dottin",
+                "age": 19,
+                "birth": {
+                    "date": "2006-03-06",
+                    "place": null,
+                    "country": "England"
+                },
+                "nationality": "England",
+                "height": "174 cm",
+                "weight": "76 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/402434.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 50,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 792,
+                "name": "J. Kluivert",
+                "firstname": "Justin Dean",
+                "lastname": "Kluivert",
+                "age": 26,
+                "birth": {
+                    "date": "1999-05-05",
+                    "place": "Amsterdam",
+                    "country": "Netherlands"
+                },
+                "nationality": "Netherlands",
+                "height": "171 cm",
+                "weight": "67 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/792.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 13,
+                        "number": 19,
+                        "position": "Attacker",
+                        "rating": "6.3",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 6,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 4,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 66,
+                        "number": 19,
+                        "position": "Midfielder",
+                        "rating": "6.5",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 22,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": 6,
+                        "won": 3
+                    },
+                    "dribbles": {
+                        "attempts": 1,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 3,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 1125,
+                "name": "R. Christie",
+                "firstname": "Ryan",
+                "lastname": "Christie",
+                "age": 30,
+                "birth": {
+                    "date": "1995-02-22",
+                    "place": "Inverness",
+                    "country": "Scotland"
+                },
+                "nationality": "Scotland",
+                "height": "178 cm",
+                "weight": "70 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/1125.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 25,
+                        "number": 10,
+                        "position": "Midfielder",
+                        "rating": "6.9",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 24,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 6,
+                        "won": 2
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 74,
+                        "number": 10,
+                        "position": "Midfielder",
+                        "rating": "6.9",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 37,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 2,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 8,
+                        "won": 3
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": 3
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 129682,
+                "name": "A. Adli",
+                "firstname": "Amine",
+                "lastname": "Adli",
+                "age": 25,
+                "birth": {
+                    "date": "2000-05-10",
+                    "place": "Béziers",
+                    "country": "France"
+                },
+                "nationality": "Morocco",
+                "height": "174 cm",
+                "weight": "72 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/129682.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 0,
+                        "minutes": 24,
+                        "number": 17,
+                        "position": "Attacker",
+                        "rating": "7",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 1,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 16,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 11,
+                        "won": 7
+                    },
+                    "dribbles": {
+                        "attempts": 4,
+                        "success": 2,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 96,
+                        "number": 17,
+                        "position": "Midfielder",
+                        "rating": "6.2",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": 1,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 35,
+                        "key": 1,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 3,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 14,
+                        "won": 7
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": 2,
+                        "committed": 2
+                    },
+                    "cards": {
+                        "yellow": 1,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        },
+        {
+            "player": {
+                "id": 343576,
+                "name": "B. Doak",
+                "firstname": "Ben",
+                "lastname": "Gannon Doak",
+                "age": 20,
+                "birth": {
+                    "date": "2005-11-11",
+                    "place": "Dalry",
+                    "country": "Scotland"
+                },
+                "nationality": "Scotland",
+                "height": "175 cm",
+                "weight": "65 kg",
+                "injured": false,
+                "photo": "https:\/\/media.api-sports.io\/football\/players\/343576.png"
+            },
+            "statistics": [
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 39,
+                        "name": "Premier League",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 0,
+                        "lineups": 0,
+                        "minutes": null,
+                        "number": 11,
+                        "position": "Attacker",
+                        "rating": null,
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 0,
+                        "bench": 1
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": null,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": null,
+                        "blocks": null,
+                        "interceptions": null
+                    },
+                    "duels": {
+                        "total": null,
+                        "won": null
+                    },
+                    "dribbles": {
+                        "attempts": null,
+                        "success": null,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": null
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                },
+                {
+                    "team": {
+                        "id": 35,
+                        "name": "Bournemouth",
+                        "logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+                    },
+                    "league": {
+                        "id": 48,
+                        "name": "League Cup",
+                        "country": "England",
+                        "logo": "https:\/\/media.api-sports.io\/football\/leagues\/48.png",
+                        "flag": "https:\/\/media.api-sports.io\/flags\/gb-eng.svg",
+                        "season": 2025
+                    },
+                    "games": {
+                        "appearences": 1,
+                        "lineups": 1,
+                        "minutes": 45,
+                        "number": 11,
+                        "position": "Midfielder",
+                        "rating": "6.5",
+                        "captain": false
+                    },
+                    "substitutes": {
+                        "in": 0,
+                        "out": 1,
+                        "bench": 0
+                    },
+                    "shots": {
+                        "total": null,
+                        "on": null
+                    },
+                    "goals": {
+                        "total": 0,
+                        "conceded": 0,
+                        "assists": 0,
+                        "saves": null
+                    },
+                    "passes": {
+                        "total": 21,
+                        "key": null,
+                        "accuracy": null
+                    },
+                    "tackles": {
+                        "total": 1,
+                        "blocks": null,
+                        "interceptions": 1
+                    },
+                    "duels": {
+                        "total": 6,
+                        "won": 2
+                    },
+                    "dribbles": {
+                        "attempts": 2,
+                        "success": 1,
+                        "past": null
+                    },
+                    "fouls": {
+                        "drawn": null,
+                        "committed": 1
+                    },
+                    "cards": {
+                        "yellow": 0,
+                        "yellowred": 0,
+                        "red": 0
+                    },
+                    "penalty": {
+                        "won": null,
+                        "commited": null,
+                        "scored": 0,
+                        "missed": 0,
+                        "saved": null
+                    }
+                }
+            ]
+        }
+    ]
+}

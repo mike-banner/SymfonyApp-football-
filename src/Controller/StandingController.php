@@ -1,5 +1,6 @@
 <?php
 // src/Controller/StandingController.php
+
 namespace App\Controller;
 
 use App\Service\FootballApiService;
@@ -16,21 +17,20 @@ class StandingController extends AbstractController
         int $season
     ): Response {
         try {
-            $data = $footballApiService->getStandings($leagueId, $season);
+            $currentYear = (int) date('Y');
 
-            // Récupérer le tableau des équipes (standings)
-            $standings = $data['response'][0]['league']['standings'][0] ?? [];
+            // Si c'est l'année en cours, le service forcera la mise à jour
+            $standings = $footballApiService->getStandings($leagueId, $season);
 
-            $leagueName = $data['response'][0]['league']['name'] ?? 'Inconnu';
+            $leagueName = $standings['response'][0]['league']['name'] ?? 'Inconnu';
 
-            // Générer la liste des années de 2020 à aujourd'hui
-            $currentYear = (int)date('Y');
+            // Générer les années disponibles pour le select
             $years = range(2020, $currentYear);
-            rsort($years); // années décroissantes
+            rsort($years);
 
             return $this->render('standing/standing.html.twig', [
-                'standings' => $standings,
-                'leagueId' => $leagueId,  
+                'standings' => $standings['response'][0]['league']['standings'][0] ?? [],
+                'leagueId' => $leagueId,
                 'league' => $leagueName,
                 'season' => $season,
                 'years' => $years,
@@ -40,4 +40,3 @@ class StandingController extends AbstractController
         }
     }
 }
-

@@ -19,20 +19,19 @@ class FootballApiService
         $this->client = $client;
         $this->cache = $cache;
         $this->apiKey = $apiKey;
-        $this->publicDirectory = $publicDirectory;
+        $this->publicDirectory = rtrim($publicDirectory, '/');
     }
 
-    // ta méthode pour récupérer les standings
     public function getStandings(string $leagueId, int $season): array
     {
         $cacheKey = "standings_{$leagueId}_{$season}";
-        $filename = null;
+        $currentYear = (int) date('Y');
+        $forceUpdate = $season === $currentYear;
 
-        // 1. On tente de trouver le fichier local avec le NOUVEAU format
-        $filePattern = $this->publicDirectory . "/api/data-*-*-{$leagueId}-{$season}.json";
-        $files = glob($filePattern);
-        if ($files && count($files) > 0) {
-            $filename = $files[0];
+        $filename = $this->getCacheFilename($leagueId, $season);
+
+        // Charger depuis le fichier si il existe et si pas d'update forcé
+        if (!$forceUpdate && file_exists($filename)) {
             $json = file_get_contents($filename);
             $data = json_decode($json, true);
             if ($data) {
@@ -40,9 +39,9 @@ class FootballApiService
             }
         }
 
-        // 2. Sinon, on va chercher l'API et on stocke le résultat en local
+        // Sinon appel à l'API via cache Symfony
         $data = $this->cache->get($cacheKey, function (ItemInterface $item) use ($leagueId, $season) {
-            $item->expiresAfter(3600); // 1 heure
+            $item->expiresAfter(3600); // 1h
 
             $response = $this->client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/standings', [
                 'query' => [
@@ -58,70 +57,65 @@ class FootballApiService
             return $response->toArray();
         });
 
-        // 3. On récupère le nom du pays et de la ligue pour composer le nom du fichier
-        if (isset($data['response'][0]['league']['country']) && isset($data['response'][0]['league']['name'])) {
-            $country = $data['response'][0]['league']['country'];
-            $leagueName = $data['response'][0]['league']['name'];
-            $countrySlug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $country), '-'));
-            $leagueNameSlug = strtolower(trim(preg_replace('/[^a-z0-9]+/i', '-', $leagueName), '-'));
-            $filename = $this->publicDirectory . "/api/data-{$countrySlug}-{$leagueNameSlug}-{$leagueId}-{$season}.json";
-        } else {
-            $filename = $this->publicDirectory . "/api/data-{$leagueId}-{$season}.json";
-        }
-        $this->storeStandingsToPublicFolder($data, basename($filename));
+        // Enregistrer le JSON
+        $this->storeJson($data, $filename);
 
         return $data;
     }
 
-    // RECUPERER LES RESULTATS D'UNE EQUIPE
+    public function getTeamFixtures(int $teamId, int $season): array
+    {
+        $cacheKey = "fixtures_{$teamId}_{$season}";
+        $filename = $this->publicDirectory . "/api/fixtures-team-{$teamId}-{$season}.json";
+        $currentYear = (int) date('Y');
+        $forceUpdate = $season === $currentYear;
 
-public function getTeamFixtures(int $teamId, int $season): array
-{
-    $cacheKey = "fixtures_{$teamId}_{$season}";
-    $filename = $this->publicDirectory . "/api/fixtures-team-{$teamId}-{$season}.json";
-
-    // 1. Vérifie si le fichier local existe déjà
-    if (file_exists($filename)) {
-        $json = file_get_contents($filename);
-        $data = json_decode($json, true);
-        if ($data) {
-            return $data;
+        if (!$forceUpdate && file_exists($filename)) {
+            $json = file_get_contents($filename);
+            $data = json_decode($json, true);
+            if ($data) return $data;
         }
+
+        $data = $this->cache->get($cacheKey, function (ItemInterface $item) use ($teamId, $season) {
+            $item->expiresAfter(3600);
+
+            $response = $this->client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/fixtures', [
+                'query' => [
+                    'team' => $teamId,
+                    'season' => $season,
+                    'status' => 'FT', // matchs joués
+                ],
+                'headers' => [
+                    'X-RapidAPI-Host' => 'api-football-v1.p.rapidapi.com',
+                    'X-RapidAPI-Key' => $this->apiKey,
+                ],
+            ]);
+
+            return $response->toArray();
+        });
+
+        $this->storeJson($data, $filename);
+
+        return $data;
     }
 
-    // 2. Sinon, appel à l'API avec cache Symfony
-    $data = $this->cache->get($cacheKey, function (ItemInterface $item) use ($teamId, $season) {
-        $item->expiresAfter(3600); // 1 heure
-
-        $response = $this->client->request('GET', 'https://api-football-v1.p.rapidapi.com/v3/fixtures', [
-            'query' => [
-                'team' => $teamId,
-                'season' => $season,
-                'status' => 'FT', // uniquement les matchs joués
-            ],
-            'headers' => [
-                'X-RapidAPI-Host' => 'api-football-v1.p.rapidapi.com',
-                'X-RapidAPI-Key' => $this->apiKey,
-            ],
-        ]);
-
-        return $response->toArray();
-    });
-
-    // 3. Enregistrement local
-    file_put_contents($filename, json_encode($data));
-
-    return $data;
-}
-
-
-    // nouvelle méthode pour enregistrer le JSON dans /public/api/
-    public function storeStandingsToPublicFolder(array $data, string $filename): void
+    private function getCacheFilename(string $leagueId, int $season): string
     {
-        $dir = $this->publicDirectory . '/api';
+        $files = glob($this->publicDirectory . "/api/data-*-*-{$leagueId}-{$season}.json");
+        if ($files && count($files) > 0) {
+            return $files[0];
+        }
+
+        return $this->publicDirectory . "/api/data-{$leagueId}-{$season}.json";
+    }
+
+    private function storeJson(array $data, string $filename): void
+    {
+        $dir = dirname($filename);
         if (!is_dir($dir)) {
             mkdir($dir, 0777, true);
         }
-        file_put_contents($dir . '/' . $filename, json_encode($data));
+
+        file_put_contents($filename, json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
     }
 }
